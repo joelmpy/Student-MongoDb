@@ -10,7 +10,7 @@ router.get('/students', function(req, res, next) {
     })
 })
 
-router.post('/', function(req, res){
+router.post('/students', function(req, res){
     const doc = new usersModels(req.body)
     doc.save().then(response => response);
     res.send("succes")
